@@ -1,0 +1,107 @@
+.roomtype1, .roomtype2, .roomtype3, .roomtype4, .roomtype5, .roomtype6, .roomtype7 {
+    display: flex;
+    align-self: center;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    background-color:white;
+    max-width: 1000px;
+}
+
+.roomtype1img img,
+.roomtype2img img,
+.roomtype3img img,
+.roomtype4img img,
+.roomtype5img img,
+.roomtype6img img,
+.roomtype7img img {
+    border-radius: 10px 10px 0 0;
+    margin-bottom: 10px; 
+}
+
+.roomtype1info,
+.roomtype2info,
+.roomtype3info,
+.roomtype4info,
+.roomtype5info,
+.roomtype6info,
+.roomtype7info {
+    
+    width: 400px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 0 0 10px 10px;
+    margin-top: 10px; 
+    
+}
+
+.roomtype1price,
+.roomtype2price,
+.roomtype3price,
+.roomtype4price,
+.roomtype5price,
+.roomtype6price,
+.roomtype7price {
+    
+    padding: 10px;
+    border-radius: 0 0 10px 10px;
+    font-weight: bold;
+}
+
+
+
+.roomtype1:hover, .roomtype2:hover, .roomtype3:hover, .roomtype4:hover, .roomtype5:hover, .roomtype6:hover, .roomtype7:hover {
+    transform: scale(1.05);
+    transition: transform 0.2s ease-in-out;
+}
+
+.room .roomtype1, .room .roomtype2, .room .roomtype3, .room .roomtype4, .room .roomtype5, .room .roomtype6, .room .roomtype7 {
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .room {
+        flex-direction: column;
+    }
+
+    .roomtype1, .roomtype2, .roomtype3, .roomtype4, .roomtype5, .roomtype6 {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+
+.book-button {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    background-color: #ff6347;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 7px;
+    font-weight: bold;
+    margin: 10px auto;
+}
+
+
+
+.left,.right {
+    
+    align-items: center;
+}
+
+.info-pair {
+    display: flex;
+    align-items: center;
+    margin-right: 20px; /* Adjust the margin as needed to create space between pairs */
+}
+
+.info-pair img {
+    width: 25px; /* Set the image width as needed */
+    height: auto;
+    margin-right: 10px; /* Add spacing between the image and text */
+}
+.features{
+    display: flex;
+}
