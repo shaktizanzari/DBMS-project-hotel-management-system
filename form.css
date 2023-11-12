@@ -61,7 +61,12 @@
 }
 
 .cd__main {
-  background: linear-gradient(to right, #34e2f1, #bae371) !important;
+  background-image:
+                radial-gradient(at 30% 30%, hsla(46, 95%, 65%, 1) 0px, transparent 50%),
+                radial-gradient(at 70% 30%, hsla(168, 85%, 65%, 1) 0px, transparent 50%),
+                radial-gradient(at 30% 70%, hsla(290, 85%, 65%, 1) 0px, transparent 50%),
+                radial-gradient(at 70% 70%, hsla(12, 85%, 65%, 1) 0px, transparent 50%);
+            ;
 }
 
 div.elem-group {

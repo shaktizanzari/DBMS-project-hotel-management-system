@@ -6,22 +6,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="author" content="CodePel">
 
-  <!-- Style CSS -->
+  
   <link rel="stylesheet" href="form.css">
-  <!-- Demo CSS (No need to include it into your project) -->
+  
   <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Nanum+Gothic'>
 </head>
 
 <body>
   <header class="cd__intro">
-    <h1 style="" ;">Booking Form </h1>
+    <h1>Booking Form </h1>
 
 
   </header>
 
   <main class="cd__main">
-    <!-- Start DEMO HTML (Use the following code into your project)-->
-    <form class="booking-form" action="#" method="post">
+    
+    <form class="booking-form" action="connect.php" method="post">
       <div class="elem-group">
         <label for="name">Your Name</label>
         <input type="text" id="name" name="name" placeholder="Enter your name" pattern=[A-Z\\sa-z]{3,20} required>
@@ -33,7 +33,7 @@
       <div class="elem-group">
         <label for="phone">Your Phone</label>
         <input type="tel" id="phone" name="phone" placeholder="Enter your 10 digit mobile number"
-          pattern=(\\d{3})-?\\s?(\\d{3})-?\\s?(\\d{4}) required>
+           required>
       </div>
       <hr>
       <div class="elem-group inlined">
@@ -53,24 +53,24 @@
         <input type="date" id="outdate" name="outdate" required>
       </div>
       <div class="elem-group">
-        <label for="room-selection">Select Room Preference</label>
-        <select id="room-selection" name="room_preference" required>
+        <label for="room_preference">Select Room Preference</label>
+        <select id="room-preference" name="room_preference" required>
           <option value="">Choose a Room from the List</option>
-          <option value="connecting">Connecting</option>
-          <option value="adjoining">Adjoining</option>
-          <option value="adjacent">Adjacent</option>
+          <option value="deluxe">deluxe</option>
+          <option value="executive">executive</option>
+          <option value="beachfront">beachfront</option>
         </select>
       </div>
       <hr>
 
       <button type="submit">Book The Rooms</button>
     </form>
-    <!-- END EDMO HTML (Happy Coding!)-->
+    
   </main>
 
-  <!-- Script JS -->
+  
   <script src="form.js"></script>
-  <!--$%analytics%$-->
+  
 </body>
 
 </html>
